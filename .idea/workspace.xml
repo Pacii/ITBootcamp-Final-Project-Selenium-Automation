@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22365826-0a1e-4551-bb35-91701991e657" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,18 +38,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Pacii/Desktop/ITBootcamp Final Project Selenium Automation",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pacii/Desktop/ITBootcamp Final Project Selenium Automation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.testCase20SearchProductsAndVerifyCartAfterLoginTest.testCase20SearchProductsAndVerifyCartAfterLoginTesting">
+}</component>
+  <component name="RunManager" selected="TestNG.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting">
+    <configuration name="data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.automationsqabg.utility.data" />
+      <module name="FinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.automationsqabg.utility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testCase14PlaceOrderRegisterWhileCheckoutTest.testCase14PlaceOrderRegisterWhileCheckoutTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
@@ -69,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase15PlaceOrderRegisterBeforeCheckoutTest.testCase15PlaceOrderRegisterBeforeCheckoutTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCase1RegisterUserTest.testCase1RegisterUserTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -78,26 +90,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="org.automationsqabg.testingTestCases.testCase15PlaceOrderRegisterBeforeCheckoutTest" />
-      <option name="METHOD_NAME" value="testCase15PlaceOrderRegisterBeforeCheckoutTesting" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testCase20SearchProductsAndVerifyCartAfterLoginTest.testCase20SearchProductsAndVerifyCartAfterLoginTesting" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.automationsqabg.testingTestCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="org.automationsqabg.testingTestCases.testCase20SearchProductsAndVerifyCartAfterLoginTest" />
-      <option name="METHOD_NAME" value="testCase20SearchProductsAndVerifyCartAfterLoginTesting" />
+      <option name="MAIN_CLASS_NAME" value="org.automationsqabg.testingTestCases.testCase1RegisterUserTest" />
+      <option name="METHOD_NAME" value="testCase1RegisterUserTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -123,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase24DownloadInvoiceAfterPurchaseOrderTest.testCase24DownloadInvoiceAfterPurchaseOrderTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -132,8 +126,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="org.automationsqabg.testingTestCases.testCase24DownloadInvoiceAfterPurchaseOrderTest" />
-      <option name="METHOD_NAME" value="testCase24DownloadInvoiceAfterPurchaseOrderTesting" />
+      <option name="MAIN_CLASS_NAME" value="org.automationsqabg.testingTestCases.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest" />
+      <option name="METHOD_NAME" value="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testCase20SearchProductsAndVerifyCartAfterLoginTest.testCase20SearchProductsAndVerifyCartAfterLoginTesting" />
-        <item itemvalue="TestNG.testCase24DownloadInvoiceAfterPurchaseOrderTest.testCase24DownloadInvoiceAfterPurchaseOrderTesting" />
+        <item itemvalue="TestNG.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
+        <item itemvalue="Application.data" />
         <item itemvalue="TestNG.testCase23VerifyAddressDetailsInCheckoutPageTest.testCase23VerifyAddressDetailsInCheckoutPageTesting" />
+        <item itemvalue="TestNG.testCase1RegisterUserTest.testCase1RegisterUserTesting" />
         <item itemvalue="TestNG.testCase14PlaceOrderRegisterWhileCheckoutTest.testCase14PlaceOrderRegisterWhileCheckoutTesting" />
-        <item itemvalue="TestNG.testCase15PlaceOrderRegisterBeforeCheckoutTest.testCase15PlaceOrderRegisterBeforeCheckoutTesting" />
       </list>
     </recent_temporary>
   </component>

@@ -10,12 +10,11 @@ import org.automationsqabg.utility.data;
 
 public class testCase1RegisterUserTest extends baseClass {
 
+//////////////////////////////////////////////////////IMPORTANT!!!!!!!//////////////////////////////////////////////////////
+    // There is a bug on this site...you cannot delete the account either manually or automatically!!!!
 
     @Test
     public void testCase1RegisterUserTesting() {
-
-
-
 
         automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
         testCase1RegisterUserPage test1Page = new testCase1RegisterUserPage(wd);
@@ -166,12 +165,10 @@ public class testCase1RegisterUserTest extends baseClass {
 
         //Again click on delete account
         test1Page.delAcc.click();
-        sleepTest(2000);
+        sleepTest(3000);
+
+           System.out.println("The button was pressed but the account was not deleted!");
+           System.out.println("BUG REPORTED!");
+       }
 
     }
-
-
-
-
-}
-

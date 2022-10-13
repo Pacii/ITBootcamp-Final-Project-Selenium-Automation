@@ -127,10 +127,6 @@ public class testCase14PlaceOrderRegisterWhileCheckoutTest extends baseClass {
         aelp.signUpCreateAccountButton.click();
         sleepTest(2500);
 
-        aelp.signUpCreateAccountButton.click();
-        sleepTest(2500);
-
-
         aelp.signUpAccountCreatedContinueButton.click();
         sleepTest(2500);
 

@@ -2,10 +2,18 @@ package org.automationsqabg.utility;
 import com.github.javafaker.Faker;
 
 public class data {
+    public static String mail1 = "";
     public static String randomEmail() {
         Faker faker = new Faker();
-        return faker.internet().emailAddress();
+        String mail = faker.internet().emailAddress();
+        mail1 = mail;
+        return mail;
     }
+
+    public static void main(String[] args) {
+        randomEmail();
+    }
+
     public static final String BASE_URL = "https://www.automationexercise.com/";
     public static final String HOME_PAGE_SUCCESS_MESSAGE = "You are at Home page";
     public static final String LOGIN_SIGNUP_URL = "https://www.automationexercise.com/login";
@@ -32,6 +40,8 @@ public class data {
     public static final String LOGGED_IN_PARTIAL_TEXT = "Logged in as";
     public static final String DELETE_ACCOUNT_TEXT = "Delete Account";
     public static final String DELETE_ACCOUNT_URL = "https://www.automationexercise.com/delete_account";
+
+    public static final String DELETE_ACCOUNT_ERROR = "Are you sure you want to delete this Delete Account?";
 
 
     public static final String LOG_IN_TO_YOUR_ACCOUNT_TEXT = "Login to your account";
@@ -115,8 +125,8 @@ public class data {
     public static final String EXPIRATION_YEAR_INPUT = "2027";
     public static final String ORDER_PLACE_SUCCESS_TEXT = "Congratulations! Your order has been confirmed!";
 
-    public static final String LOGIN_EMAIL_ADDRESS_INPUT = "abc3@mail.com";
-    public static final String LOGIN_PASSWORD_INPUT = "zxcV%6789";
+    public static final String LOGIN_EMAIL_ADDRESS_INPUT = "xyz12345@mail.com";
+    public static final String LOGIN_PASSWORD_INPUT = "zxcV%1289";
 
     public static final String SHOPPING_CART_PAGE_TEXT = "Shopping Cart";
     public static final String SHOPPING_CART_PAGE_URL = "https://www.automationexercise.com/view_cart";

@@ -170,4 +170,11 @@ public class testCase1RegisterUserPage extends basePage{
     public WebElement getDelAcc() {
         return delAcc;
     }
+
+    @FindBy ( xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]" )
+    public WebElement deleteError;
+
+    public WebElement getDeleteError() {
+        return deleteError;
+    }
 }

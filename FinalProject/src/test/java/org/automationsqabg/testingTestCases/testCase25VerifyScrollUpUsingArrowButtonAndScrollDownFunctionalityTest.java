@@ -14,7 +14,6 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
 
         automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
         testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage test25Page = new testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage(wd);
-
 //        3. Verify that home page is visible successfully
         if (aelp.getHomeSlider().isDisplayed()){
             System.out.println("You are at HomePage");
@@ -38,7 +37,7 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
         }
 
 //        6. Click ad arrow to remove ads
-        test25Page.getAdArrow().click();
+        test25Page.adArrow.click();
         sleepTest(1000);
 
 //        7. Click on arrow at bottom right side to move upward
