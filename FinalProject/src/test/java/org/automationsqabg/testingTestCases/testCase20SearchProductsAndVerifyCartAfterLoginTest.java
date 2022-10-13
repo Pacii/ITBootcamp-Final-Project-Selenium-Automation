@@ -38,34 +38,22 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginTest extends baseCla
 
         JavascriptExecutor jse = (JavascriptExecutor) wd;
         jse.executeScript("window.scrollBy(0,500)");
-        sleepTest(5000);
-
-//        WebElement mouseHoverOverSleevelessDressName = driver.findElement(By.xpath("/html/body/section[2]/div[@class='container']/div[@class='row']//div[@class='single-products']/div[2]"));
-//        Actions actions = new Actions(driver);
-//        actions.moveToElement(mouseHoverOverSleevelessDressName);
-//        sleepTest(5000);
-//        System.out.println("MOUSE HOVER WORKED");
+        sleepTest(3000);
 
         // MOUSE HOVER
-        // https://stackoverflow.com/questions/17293914/how-to-perform-mouseover-function-in-selenium-webdriver-using-java
         Actions builder = new Actions(wd);
-//        WebElement element = tcspavcalp.mouseHoverOverSleevelessDressName;
-//        WebElement element = driver.findElement(By.xpath("/html/body/section[2]/div[@class='container']/div[@class='row']//div[@class='single-products']/div[2]"));
+
         builder.moveToElement(test20Page.mouseHoverOverSleevelessDressName).build().perform();
-        sleepTest(5000);
+        sleepTest(4000);
 
         String sleevelessDressTxt = test20Page.mouseHoverSleevelessDressText.getText();
         Assert.assertEquals(sleevelessDressTxt, data.SEARCH_TEXT_ONE);
         System.out.println(sleevelessDressTxt);
-        sleepTest(5000);
+        sleepTest(4000);
         System.out.println("MOUSE HOVER WORKED");
 
-//        7. Verify all the products related to search are visible=> What happened if I search through "top"
-//        Multiple tops are appearing & Should I verify them 1 by 1
 
-//        8. Add those products to cart
-        test20Page.viewProduct.click();
-        sleepTest(1500);
+//        7. Add those products to cart
 
         test20Page.addToCartButton.click();
         sleepTest(1500);
@@ -73,7 +61,7 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginTest extends baseCla
         test20Page.continueShopping.click();
         sleepTest(1500);
 
-//        9. Click 'Cart' button and verify that products are visible in cart
+//        8. Click 'Cart' button and verify that products are visible in cart
         test20Page.cartButton.click();
         sleepTest(1500);
 
@@ -82,7 +70,7 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginTest extends baseCla
         sleepTest(1500);
         System.out.println(productVisibilityText + " is displaying.");
 
-//        10. Click 'Signup / Login' button and submit login details
+//        9. Click 'Signup / Login' button and submit login details
         aelp.signUpLogInButton.click();
         sleepTest(1500);
 
@@ -95,11 +83,11 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginTest extends baseCla
         aelp.loginButton.click();
         sleepTest(1500);
 
-//        11. Again, go to Cart page
+//        10. Again, go to Cart page
         aelp.homeCartButton.click();
         sleepTest(1500);
 
-//        12. Verify that those products are visible in cart after login as well
+//        11. Verify that those products are visible in cart after login as well
         String productVisibilityText1 = test20Page.productVisibility.getText();
         Assert.assertEquals(productVisibilityText1, data.SEARCH_TEXT_ONE);
         sleepTest(1500);

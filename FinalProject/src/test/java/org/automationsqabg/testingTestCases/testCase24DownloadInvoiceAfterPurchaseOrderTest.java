@@ -77,6 +77,10 @@ public class testCase24DownloadInvoiceAfterPurchaseOrderTest extends baseClass{
         aelp.signUpPasswordInput.sendKeys(data.SIGNUP_PAGE_PASSWORD_INPUT);
         sleepTest(2500);
 
+        JavascriptExecutor jse = (JavascriptExecutor) wd;
+        jse.executeScript("window.scrollBy(0,500)");
+        sleepTest(1000);
+
         Select objSelectDay = new Select(aelp.signUpDayDropdown);
         objSelectDay.selectByValue(data.SIGNUP_PAGE_DATE_DROPDOWN);
         sleepTest(2500);
@@ -122,6 +126,9 @@ public class testCase24DownloadInvoiceAfterPurchaseOrderTest extends baseClass{
 
         aelp.signUpZipCodeInput.sendKeys(data.SIGNUP_ZIPCODE_INPUT);
         sleepTest(2500);
+
+        jse.executeScript("window.scrollBy(0,500)");
+        sleepTest(1000);
 
         aelp.signUpMobileNumberInput.sendKeys(data.SIGNUP_MOBILE_NUMBER_INPUT);
         sleepTest(2500);

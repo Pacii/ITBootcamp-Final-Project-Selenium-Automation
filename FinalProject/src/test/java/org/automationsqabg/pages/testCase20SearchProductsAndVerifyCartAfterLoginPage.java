@@ -22,7 +22,7 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginPage extends basePag
         return searchIcon;
     }
 
-    @FindBy ( xpath = "/html/body/section[2]/div[@class='container']/div[@class='row']//div[@class='single-products']/div[2]" )
+    @FindBy ( xpath = "/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]" )
     public WebElement mouseHoverOverSleevelessDressName;
 
     public WebElement getMouseHoverOverSleevelessDressName() {
@@ -36,7 +36,7 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginPage extends basePag
         return mouseHoverSleevelessDressName;
     }
 
-    @FindBy ( xpath = "/html/body/section[2]/div[@class='container']/div[@class='row']/div[@class='col-sm-9 padding-right']//div[@class='single-products']/div[2]/div/p[.='Sleeveless Dress']" )
+    @FindBy ( xpath = "/html[1]/body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[1]" )
     public WebElement mouseHoverSleevelessDressText;
 
     public WebElement getMouseHoverSleevelessDressText() {
@@ -50,7 +50,7 @@ public class testCase20SearchProductsAndVerifyCartAfterLoginPage extends basePag
         return viewProduct;
     }
 
-    @FindBy ( xpath = "/html/body/section/div[@class='container']/div[@class='row']//button[@type='button']" )
+    @FindBy ( xpath = "/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a" )
     public WebElement addToCartButton;
 
     public WebElement getAddToCartButton() {

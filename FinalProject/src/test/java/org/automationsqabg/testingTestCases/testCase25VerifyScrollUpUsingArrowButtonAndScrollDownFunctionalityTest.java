@@ -4,9 +4,6 @@ import org.automationsqabg.pages.automationExerciseLandingPage;
 import org.automationsqabg.pages.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage;
 import org.automationsqabg.utility.data;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,18 +26,18 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
         }
 
 
-//        5. Scroll down page to bottom
+//        4. Scroll down page to bottom
         JavascriptExecutor jse = (JavascriptExecutor) wd;
         jse.executeScript("window.scrollBy(0,8800)");
         sleepTest(2500);
 
-//        6. Verify 'SUBSCRIPTION' is visible
+//        5. Verify 'SUBSCRIPTION' is visible
         if (aelp.getSubscriptionText().isDisplayed()) {
             System.out.println("SUBSCRIPTION is visible");
             sleepTest(1500);
         }
 
-        //        4. Click ad arrow to remove ads
+//        6. Click ad arrow to remove ads
         test25Page.getAdArrow().click();
         sleepTest(1000);
 

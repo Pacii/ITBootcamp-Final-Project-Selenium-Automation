@@ -110,6 +110,7 @@ public class testCase23VerifyAddressDetailsInCheckoutPageTest extends baseClass{
         else {
             System.out.println(data.ERROR_MESSAGE);
         }
+        aelp.signUpAccountCreatedContinueButton.click();
 
 //        7. Verify ' Logged in as username' at top
         if (aelp.loggedInAsTxt.isDisplayed()) {
@@ -126,7 +127,7 @@ public class testCase23VerifyAddressDetailsInCheckoutPageTest extends baseClass{
 
 //        8. Add products to cart
         JavascriptExecutor js = (JavascriptExecutor) wd;
-        js.executeScript("window.scrollBy(0,1000)");
+        js.executeScript("window.scrollBy(0,600)");
         sleepTest(2500);
 
         aelp.viewProduct.click();

@@ -299,21 +299,21 @@ import org.openqa.selenium.support.FindBy;
             return signUpCreateAccountButton;
         }
 
-        @FindBy ( xpath = "//*[@id=\"form\"]/div/div/div/h2/b" )
+        @FindBy ( xpath = "/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/h2[1]/b[1]" )
         public WebElement signUpAccountCreatedText;
 
         public WebElement getSignUpAccountCreatedText() {
             return signUpAccountCreatedText;
         }
 
-        @FindBy ( xpath = "//*[@id=\"form\"]/div/div/div/div/a" )
+        @FindBy ( xpath = "/html/body/section/div/div/div/div/a" )
         public WebElement signUpAccountCreatedContinueButton;
 
         public WebElement getSignUpAccountCreatedContinueButton() {
             return signUpAccountCreatedContinueButton;
         }
 
-        @FindBy ( xpath = "/html//header[@id='header']/div[@class='header-middle']//ul[@class='nav navbar-nav']/li[9]/a" )
+        @FindBy ( xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[10]/a[1]" )
         public WebElement loggedInAsTxt;
 
         public WebElement getLoggedInAsTxt() {
