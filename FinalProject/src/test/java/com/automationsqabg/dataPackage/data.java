@@ -106,8 +106,8 @@ public class data {
     public static final String SIGNUP_ADDRESS_INPUT = "Random Address1";
     public static final String SIGNUP_ADDRESS2_INPUT = "Random Address2";
     public static final String SIGNUP_COUNTRY_NAME_DROPDOWN = "New Zealand";
-    public static final String SIGNUP_STATE_INPUT = "M";
-    public static final String SIGNUP_CITY_INPUT = "M";
+    public static final String SIGNUP_STATE_INPUT = "MSX ";
+    public static final String SIGNUP_CITY_INPUT = "MSX";
     public static final String SIGNUP_ZIPCODE_INPUT = "1231";
     public static final String SIGNUP_MOBILE_NUMBER_INPUT = "+3811670130130";
     public static final String SIGNUP_ACCOUNT_CREATED_TXT = "ACCOUNT CREATED!";

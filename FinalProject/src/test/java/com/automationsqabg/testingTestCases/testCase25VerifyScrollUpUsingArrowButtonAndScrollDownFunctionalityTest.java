@@ -16,7 +16,7 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
         automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
         testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage test25Page = new testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage(wd);
 
-//        3. I had difficulty removing the ad from the bottom of the page, so I minimized the window to remove the ads
+//        3. I had difficulty removing the ad from the bottom of the page, so I resized the window to remove the ads
         wd.manage().window().setSize(new Dimension(1500,800));
 
 //        4. Verify that home page is visible successfully

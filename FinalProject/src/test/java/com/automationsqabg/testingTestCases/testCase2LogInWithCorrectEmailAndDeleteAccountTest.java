@@ -28,7 +28,7 @@ public class testCase2LogInWithCorrectEmailAndDeleteAccountTest extends baseClas
         sleepTest(1500);
         System.out.println("Login to your account is showing");
 
-        aelp.loginEmailAddress.sendKeys(data.SIGNUP_EMAIL);
+        aelp.loginEmailAddress.sendKeys(data.LOGIN_MAIL);
         sleepTest(2000);
 
         aelp.loginPassword.sendKeys(data.SIGNUP_PAGE_PASSWORD);

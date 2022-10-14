@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22365826-0a1e-4551-bb35-91701991e657" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="22365826-0a1e-4551-bb35-91701991e657" name="Changes" comment="Initial Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Pacii/Desktop/ITBootcamp Final Project Selenium Automation",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pacii/Desktop/ITBootcamp-Final-Project-Selenium-Automation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting">
+}</component>
+  <component name="RunManager" selected="TestNG.testCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting">
     <configuration name="testCase16PlaceOrderLoginBeforeCheckoutTest.testCase16PlaceOrderLoginBeforeCheckoutTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
@@ -85,6 +83,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testCase1RegisterUserTest.testCase1RegisterUserTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automationsqabg.testingTestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase1RegisterUserTest" />
+      <option name="METHOD_NAME" value="testCase1RegisterUserTesting" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
@@ -103,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -112,25 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTesting" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automationsqabg.testingTestCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest" />
-      <option name="METHOD_NAME" value="testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTesting" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase2LogInWithCorrectEmailAndDeleteAccountTest" />
+      <option name="METHOD_NAME" value="testCase2LogInWithCorrectEmailTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,15 +139,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.testCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting" />
+        <item itemvalue="TestNG.testCase1RegisterUserTest.testCase1RegisterUserTesting" />
         <item itemvalue="TestNG.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
         <item itemvalue="TestNG.testCase16PlaceOrderLoginBeforeCheckoutTest.testCase16PlaceOrderLoginBeforeCheckoutTesting" />
         <item itemvalue="TestNG.testCase1RegisterUserTest" />
-        <item itemvalue="TestNG.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTesting" />
-        <item itemvalue="TestNG.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Pacii\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="22365826-0a1e-4551-bb35-91701991e657" name="Changes" comment="" />
@@ -226,6 +228,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/FinalProject" />
+    </ignored-roots>
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
@@ -243,5 +249,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
