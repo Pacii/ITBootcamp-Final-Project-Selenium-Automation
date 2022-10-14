@@ -6,180 +6,180 @@
 
         <classes>
 
-            <class name ="org.automationsqabg.testingTestCases.testCase1RegisterUserTest">
+            <class name ="testCase1RegisterUserTest">
                 <methods>
                     <include name="testCase1RegisterUserTesting" />
                 </methods>
             </class>
 
-            <class name ="org.automationsqabg.testingTestCases.testCase2LogInWithCorrectEmailTest">
+            <class name ="testCase2LogInWithCorrectEmailAndDeleteAccountTest">
                 <methods>
                     <include name="testCase2LogInWithCorrectEmailTesting" />
                 </methods>
             </class>
 
-            <class name ="org.automationsqabg.testingTestCases.testCase3LogInWithInCorrectEmailTest">
+            <class name ="testCase3LogInWithInCorrectEmailTest">
                 <methods>
                     <include name="testCase3LogInWithInCorrectEmailTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase4LogOutUserTest">
+            <class name ="testCase4LogOutUserTest">
                 <methods>
                     <include name="testCase4LogOutUserTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase5RegisterUserWithExistingEmailTest">
+            <class name ="testCase5RegisterUserWithExistingEmailTest">
                 <methods>
                     <include name="testCase5RegisterUserWithExistingEmailTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase6ContactUsFormTest">
+            <class name ="testCase6ContactUsFormTest">
                 <methods>
                     <include name="testCase6ContactUsFormTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase7VerifyTestCasesTest">
+            <class name ="testCase7VerifyTestCasesTest">
                 <methods>
                     <include name="testCase7VerifyTestCasesTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase8VerifyAllProductsAndProductDetailTest">
+            <class name ="testCase8VerifyAllProductsAndProductDetailTest">
                 <methods>
                     <include name="testCase8VerifyAllProductsAndProductDetailTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase9SearchProductTest">
+            <class name ="testCase9SearchProductTest">
                 <methods>
                     <include name="testCase9SearchProductTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase10VerifySubscriptionInHomeTest">
+            <class name ="testCase10VerifySubscriptionInHomeTest">
                 <methods>
                     <include name="testCase10VerifySubscriptionInHomeTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase11VerifySubscriptionInCartTest">
+            <class name ="testCase11VerifySubscriptionInCartTest">
                 <methods>
                     <include name="testCase11VerifySubscriptionInCartTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase12AddProductsInCartTest">
+            <class name ="testCase12AddProductsInCartTest">
                 <methods>
                     <include name="testCase12AddProductsInCartTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase13VerifyProductQuantityInCartTest">
+            <class name ="testCase13VerifyProductQuantityInCartTest">
                 <methods>
                     <include name="testCase13VerifyProductQuantityInCartTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase14PlaceOrderRegisterWhileCheckoutTest">
+            <class name ="testCase14PlaceOrderRegisterWhileCheckoutTest">
                 <methods>
                     <include name="testCase14PlaceOrderRegisterWhileCheckoutTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase15PlaceOrderRegisterBeforeCheckoutTest">
+            <class name ="testCase15PlaceOrderRegisterBeforeCheckoutTest">
                 <methods>
                     <include name="testCase15PlaceOrderRegisterBeforeCheckoutTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase16PlaceOrderLoginBeforeCheckoutTest">
+            <class name ="testCase16PlaceOrderLoginBeforeCheckoutTest">
                 <methods>
                     <include name="testCase16PlaceOrderLoginBeforeCheckoutTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase17RemoveProductsFromCartTest">
+            <class name ="testCase17RemoveProductsFromCartTest">
                 <methods>
                     <include name="testCase17RemoveProductsFromCartTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase18ViewCategoryProductsTest">
+            <class name ="testCase18ViewCategoryProductsTest">
                 <methods>
                     <include name="testCase18ViewCategoryProductsTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase19ViewAndCartBrandProductsTest">
+            <class name ="testCase19ViewAndCartBrandProductsTest">
                 <methods>
                     <include name="testCase19ViewAndCartBrandProductsTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase20SearchProductsAndVerifyCartAfterLoginTest">
+            <class name ="testCase20SearchProductsAndVerifyCartAfterLoginTest">
                 <methods>
                     <include name="testCase20SearchProductsAndVerifyCartAfterLoginTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase21AddReviewOnProductTest">
+            <class name ="testCase21AddReviewOnProductTest">
                 <methods>
                     <include name="testCase21AddReviewOnProductTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase22AddToCartFromRecommendedItemsTest">
+            <class name ="testCase22AddToCartFromRecommendedItemsTest">
                 <methods>
                     <include name="testCase22AddToCartFromRecommendedItemsTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase23VerifyAddressDetailsInCheckoutPageTest">
+            <class name ="testCase23VerifyAddressDetailsInCheckoutPageTest">
                 <methods>
                     <include name="testCase23VerifyAddressDetailsInCheckoutPageTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase24DownloadInvoiceAfterPurchaseOrderTest">
+            <class name ="testCase24DownloadInvoiceAfterPurchaseOrderTest">
                 <methods>
                     <include name="testCase24DownloadInvoiceAfterPurchaseOrderTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest">
+            <class name ="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest">
                 <methods>
                     <include name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
                 </methods>
             </class>
 
 
-            <class name ="org.automationsqabg.testingTestCases.testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest">
+            <class name ="testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTest">
                 <methods>
                     <include name="testCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityTesting" />
                 </methods>
