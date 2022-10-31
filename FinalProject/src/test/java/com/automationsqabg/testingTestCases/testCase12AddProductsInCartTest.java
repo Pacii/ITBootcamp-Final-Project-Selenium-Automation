@@ -1,25 +1,25 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase12AddProductsInCartPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase12AddProductsInCartPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase12AddProductsInCartTest extends baseClass{
+public class TestCase12AddProductsInCartTest extends BaseClass {
 
     @Test
     public void testCase12AddProductsInCartTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase12AddProductsInCartPage test12Page = new testCase12AddProductsInCartPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase12AddProductsInCartPage test12Page = new TestCase12AddProductsInCartPage(wd);
 
         aelp.productsButton.click();
 
         String productsUrl = wd.getCurrentUrl();
-        Assert.assertEquals(productsUrl, data.PRODUCTS_PAGE_URL);
+        Assert.assertEquals(productsUrl, Data.PRODUCTS_PAGE_URL);
         sleepTest(1500);
         System.out.println("Products URL Matched");
 
@@ -55,7 +55,7 @@ public class testCase12AddProductsInCartTest extends baseClass{
         sleepTest(1500);
 
         String viewCartUrl = wd.getCurrentUrl();
-        Assert.assertEquals(viewCartUrl,data.CART_URL);
+        Assert.assertEquals(viewCartUrl, Data.CART_URL);
         sleepTest(1500);
         System.out.println("View Cart Url Matched");
     }

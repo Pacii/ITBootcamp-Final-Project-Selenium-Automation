@@ -1,19 +1,19 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase22AddToCartFromRecommendedItemsPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase22AddToCartFromRecommendedItemsPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase22AddToCartFromRecommendedItemsTest extends baseClass{
+public class TestCase22AddToCartFromRecommendedItemsTest extends BaseClass {
 
     @Test
     public void testCase22AddToCartFromRecommendedItemsTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase22AddToCartFromRecommendedItemsPage test22Page = new testCase22AddToCartFromRecommendedItemsPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase22AddToCartFromRecommendedItemsPage test22Page = new TestCase22AddToCartFromRecommendedItemsPage(wd);
 
 //        3. Scroll to bottom of page
         JavascriptExecutor jse = (JavascriptExecutor) wd;
@@ -22,7 +22,7 @@ public class testCase22AddToCartFromRecommendedItemsTest extends baseClass{
 
 //        4. Verify 'RECOMMENDED ITEMS' are visible
         String recommendedItemsTxt = test22Page.recommendedItemsText.getText();
-        Assert.assertEquals(recommendedItemsTxt, data.RECOMMENDED_ITEMS_TEXT);
+        Assert.assertEquals(recommendedItemsTxt, Data.RECOMMENDED_ITEMS_TEXT);
         sleepTest(1500);
         System.out.println();
         System.out.println(recommendedItemsTxt + " is displaying.");
@@ -38,14 +38,14 @@ public class testCase22AddToCartFromRecommendedItemsTest extends baseClass{
 //        7. Verify that product is displayed in cart page
         if (test22Page.stylishDressDisplayText.isDisplayed()) {
             String stylishDressDisplayTxt = test22Page.stylishDressDisplayText.getText();
-            Assert.assertEquals(stylishDressDisplayTxt, data.STYLISH_DRESS_TEXT);
+            Assert.assertEquals(stylishDressDisplayTxt, Data.STYLISH_DRESS_TEXT);
             sleepTest(1500);
             System.out.println();
             System.out.println(stylishDressDisplayTxt + " is showing.");
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
     }
 }

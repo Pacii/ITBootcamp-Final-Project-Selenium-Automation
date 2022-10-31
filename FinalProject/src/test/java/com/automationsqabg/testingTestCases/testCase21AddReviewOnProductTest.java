@@ -1,19 +1,19 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase21AddReviewOnProductPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase21AddReviewOnProductPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase21AddReviewOnProductTest extends baseClass{
+public class TestCase21AddReviewOnProductTest extends BaseClass {
 
     @Test
     public void testCase21AddReviewOnProductTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase21AddReviewOnProductPage test21Page = new testCase21AddReviewOnProductPage (wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase21AddReviewOnProductPage test21Page = new TestCase21AddReviewOnProductPage(wd);
 
 //        3. Click on 'Products' button
         aelp.productsButton.click();
@@ -21,7 +21,7 @@ public class testCase21AddReviewOnProductTest extends baseClass{
 
 //        4. Verify user is navigated to ALL PRODUCTS page successfully
         String allProductsTxt = test21Page.allProductsText.getText();
-        Assert.assertEquals(allProductsTxt, data.ALL_PRODUCTS_TEXT);
+        Assert.assertEquals(allProductsTxt, Data.ALL_PRODUCTS_TEXT);
         sleepTest(1500);
         System.out.println();
         System.out.println(allProductsTxt + " is displaying");
@@ -37,7 +37,7 @@ public class testCase21AddReviewOnProductTest extends baseClass{
 
 //        6. Verify 'Write Your Review' is visible
         String writeYourReviewTxt = test21Page.writeYourReviewText.getText();
-        Assert.assertEquals(writeYourReviewTxt, data.WRITE_YOUR_REVIEW_TEXT);
+        Assert.assertEquals(writeYourReviewTxt, Data.WRITE_YOUR_REVIEW_TEXT);
         sleepTest(1500);
         System.out.println();
         System.out.println(writeYourReviewTxt + " is displaying");
@@ -47,19 +47,19 @@ public class testCase21AddReviewOnProductTest extends baseClass{
         sleepTest(5000);
 
 //        7. Enter name, email and review
-        test21Page.writeYourReviewTextNameInput.sendKeys(data.WRITE_YOUR_REVIEW_TEXT_NAME_INPUT);
+        test21Page.writeYourReviewTextNameInput.sendKeys(Data.WRITE_YOUR_REVIEW_TEXT_NAME_INPUT);
         sleepTest(1500);
 
         if (test21Page.writeYourReviewTextEmailAddressInput.isDisplayed()) {
-            test21Page.writeYourReviewTextEmailAddressInput.sendKeys(data.WRITE_YOUR_REVIEW_TEXT_WRONG_EMAIL_ADDRESS_INPUT);
+            test21Page.writeYourReviewTextEmailAddressInput.sendKeys(Data.WRITE_YOUR_REVIEW_TEXT_WRONG_EMAIL_ADDRESS_INPUT);
             sleepTest(2500);
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
-        test21Page.writeYourReviewTextInput.sendKeys(data.WRITE_YOUR_REVIEW_TEXT_INPUT);
+        test21Page.writeYourReviewTextInput.sendKeys(Data.WRITE_YOUR_REVIEW_TEXT_INPUT);
         sleepTest(1500);
 
         test21Page.writeYourReviewTextSubmit.click();
@@ -69,23 +69,23 @@ public class testCase21AddReviewOnProductTest extends baseClass{
 
         test21Page.writeYourReviewTextNameInput.clear();
         sleepTest(2500);
-        test21Page.writeYourReviewTextNameInput.sendKeys(data.WRITE_YOUR_REVIEW_TEXT_NAME_INPUT);
+        test21Page.writeYourReviewTextNameInput.sendKeys(Data.WRITE_YOUR_REVIEW_TEXT_NAME_INPUT);
         sleepTest(1500);
 
         if (test21Page.writeYourReviewTextEmailAddressInput.isDisplayed()) {
             test21Page.writeYourReviewTextEmailAddressInput.clear();
             sleepTest(2500);
-            test21Page.writeYourReviewTextEmailAddressInput.sendKeys(data.WRITE_YOUR_REVIEW_TEXT_EMAIL_ADDRESS_INPUT);
+            test21Page.writeYourReviewTextEmailAddressInput.sendKeys(Data.WRITE_YOUR_REVIEW_TEXT_EMAIL_ADDRESS_INPUT);
             sleepTest(1500);
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
         test21Page.writeYourReviewTextInput.clear();
         sleepTest(2500);
-        test21Page.writeYourReviewTextInput.sendKeys(data.WRITE_YOUR_REVIEW_TEXT_INPUT);
+        test21Page.writeYourReviewTextInput.sendKeys(Data.WRITE_YOUR_REVIEW_TEXT_INPUT);
         sleepTest(1500);
 
 //        8. Click 'Submit' button

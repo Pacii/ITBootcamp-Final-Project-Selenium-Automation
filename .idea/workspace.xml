@@ -47,8 +47,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.testCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting">
-    <configuration name="testCase16PlaceOrderLoginBeforeCheckoutTest.testCase16PlaceOrderLoginBeforeCheckoutTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TestCase1RegisterUserTestAndDelete.testCase1RegisterUserTesting">
+    <configuration name="TestCase16PlaceOrderLoginBeforeCheckoutTest.testCase16PlaceOrderLoginBeforeCheckoutTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -57,7 +62,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase16PlaceOrderLoginBeforeCheckoutTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.TestCase16PlaceOrderLoginBeforeCheckoutTest" />
       <option name="METHOD_NAME" value="testCase16PlaceOrderLoginBeforeCheckoutTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -66,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase1RegisterUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase1RegisterUserTestAndDelete" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -75,7 +80,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase1RegisterUserTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.TestCase1RegisterUserTestAndDelete" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -83,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase1RegisterUserTest.testCase1RegisterUserTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase1RegisterUserTestAndDelete.testCase1RegisterUserTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +97,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase1RegisterUserTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.TestCase1RegisterUserTestAndDelete" />
       <option name="METHOD_NAME" value="testCase1RegisterUserTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -101,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +115,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest" />
       <option name="METHOD_NAME" value="testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -119,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
       <extension name="coverage">
         <pattern>
@@ -128,7 +133,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automationsqabg.testingTestCases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.testCase2LogInWithCorrectEmailAndDeleteAccountTest" />
+      <option name="MAIN_CLASS_NAME" value="com.automationsqabg.testingTestCases.TestCase2LogInWithCorrectEmailAndDeleteAccountTest" />
       <option name="METHOD_NAME" value="testCase2LogInWithCorrectEmailTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -139,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting" />
-        <item itemvalue="TestNG.testCase1RegisterUserTest.testCase1RegisterUserTesting" />
-        <item itemvalue="TestNG.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
-        <item itemvalue="TestNG.testCase16PlaceOrderLoginBeforeCheckoutTest.testCase16PlaceOrderLoginBeforeCheckoutTesting" />
-        <item itemvalue="TestNG.testCase1RegisterUserTest" />
+        <item itemvalue="TestNG.TestCase1RegisterUserTestAndDelete.testCase1RegisterUserTesting" />
+        <item itemvalue="TestNG.TestCase1RegisterUserTestAndDelete" />
+        <item itemvalue="TestNG.TestCase2LogInWithCorrectEmailAndDeleteAccountTest.testCase2LogInWithCorrectEmailTesting" />
+        <item itemvalue="TestNG.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting" />
+        <item itemvalue="TestNG.TestCase16PlaceOrderLoginBeforeCheckoutTest.testCase16PlaceOrderLoginBeforeCheckoutTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -239,9 +244,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/FinalProject/src/test/java/com/automationsqabg/testingTestCases/testCase3LogInWithInCorrectEmailTest.java</url>
+          <url>file://$PROJECT_DIR$/FinalProject/src/test/java/com/automationsqabg/testingTestCases/TestCase3LogInWithInCorrectEmailTest.java</url>
           <line>11</line>
-          <properties class="com.automationsqabg.testingTestCases.testCase3LogInWithInCorrectEmailTest" method="testCase3LogInWithInCorrectEmailTesting">
+          <properties class="testingTestCases.TestCase3LogInWithInCorrectEmailTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

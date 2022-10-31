@@ -1,19 +1,19 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase17RemoveProductsFromCartPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase17RemoveProductsFromCartPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase17RemoveProductsFromCartTest extends baseClass{
+public class TestCase17RemoveProductsFromCartTest extends BaseClass {
 
     @Test
     public void testCase17RemoveProductsFromCartTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase17RemoveProductsFromCartPage test17Page = new testCase17RemoveProductsFromCartPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase17RemoveProductsFromCartPage test17Page = new TestCase17RemoveProductsFromCartPage(wd);
 
 //        3. Verify that home page is visible successfully
         if (test17Page.homePageSlider.isDisplayed()) {
@@ -21,17 +21,17 @@ public class testCase17RemoveProductsFromCartTest extends baseClass{
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
         if (test17Page.homePageSlider.isDisplayed()) {
             String homePageUrl = wd.getCurrentUrl();
-            Assert.assertEquals(homePageUrl, data.BASE_URL);
+            Assert.assertEquals(homePageUrl, Data.BASE_URL);
             System.out.println(homePageUrl + " You are watching home page url. ");
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
         JavascriptExecutor je = (JavascriptExecutor) wd;
@@ -52,16 +52,16 @@ public class testCase17RemoveProductsFromCartTest extends baseClass{
 
 //        6. Verify that cart page is displayed
         if (test17Page.shoppingCartText.isDisplayed()) {
-            System.out.println("You are at " + data.SHOPPING_CART_PAGE_TEXT + " page");
+            System.out.println("You are at " + Data.SHOPPING_CART_PAGE_TEXT + " page");
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
         String shoppingCartPageUrl = wd.getCurrentUrl();
-        Assert.assertEquals(shoppingCartPageUrl,data.SHOPPING_CART_PAGE_URL);
-        System.out.println("As URL match, so you are at " + data.SHOPPING_CART_PAGE_TEXT);
+        Assert.assertEquals(shoppingCartPageUrl, Data.SHOPPING_CART_PAGE_URL);
+        System.out.println("As URL match, so you are at " + Data.SHOPPING_CART_PAGE_TEXT);
         sleepTest(1500);
 
 //        7. Click 'X' button corresponding to particular product
@@ -70,7 +70,7 @@ public class testCase17RemoveProductsFromCartTest extends baseClass{
 
 //        8. Verify that product is removed from the cart
         String  productRemovedTxt = test17Page.productRemovedText.getText();
-        Assert.assertEquals(productRemovedTxt, data.PRODUCT_REMOVED_TEXT);
+        Assert.assertEquals(productRemovedTxt, Data.PRODUCT_REMOVED_TEXT);
         System.out.println(productRemovedTxt);
         sleepTest(2500);
 

@@ -1,22 +1,22 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase19ViewAndCartBrandProductsPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase19ViewAndCartBrandProductsPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase19ViewAndCartBrandProductsTest extends baseClass{
+public class TestCase19ViewAndCartBrandProductsTest extends BaseClass {
 
     @Test
     public void testCase19ViewAndCartBrandProductsTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase19ViewAndCartBrandProductsPage test19Page = new testCase19ViewAndCartBrandProductsPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase19ViewAndCartBrandProductsPage test19Page = new TestCase19ViewAndCartBrandProductsPage(wd);
 
         String homePageUrl = wd.getCurrentUrl();
-        Assert.assertEquals(homePageUrl, data.BASE_URL);
+        Assert.assertEquals(homePageUrl, Data.BASE_URL);
         sleepTest(2000);
         System.out.println(homePageUrl + "\n");
         System.out.println("You are at home page.");
@@ -34,12 +34,12 @@ public class testCase19ViewAndCartBrandProductsTest extends baseClass{
 
 //        6. Verify that user is navigated to brand page and brand products are displayed
         String poloProductsPageUrl = wd.getCurrentUrl();
-        Assert.assertEquals(poloProductsPageUrl, data.POLO_BRAND_PAGE_URL);
+        Assert.assertEquals(poloProductsPageUrl, Data.POLO_BRAND_PAGE_URL);
         sleepTest(1500);
         System.out.println(poloProductsPageUrl + "\n");
 
         String poloProductsTxt = test19Page.poloBrandProductsText.getText();
-        Assert.assertEquals(poloProductsTxt, data.POLO_BRAND_PRODUCTS_TEXT);
+        Assert.assertEquals(poloProductsTxt, Data.POLO_BRAND_PRODUCTS_TEXT);
         sleepTest(1500);
         System.out.println(poloProductsTxt + "\n");
         System.out.println("You are watching " + poloProductsTxt + "\n");
@@ -53,12 +53,12 @@ public class testCase19ViewAndCartBrandProductsTest extends baseClass{
 
 //        8. Verify that user is navigated to that brand page and can see products
         String madameProductsPageUrl = wd.getCurrentUrl();
-        Assert.assertEquals(madameProductsPageUrl, data.MADAME_BRAND_PAGE_URL);
+        Assert.assertEquals(madameProductsPageUrl, Data.MADAME_BRAND_PAGE_URL);
         sleepTest(1500);
         System.out.println(madameProductsPageUrl + "\n");
 
         String madameProductsTxt = test19Page.madameBrandsProductsText.getText();
-        Assert.assertEquals(madameProductsTxt, data.MADAME_BRAND_PRODUCTS_TEXT);
+        Assert.assertEquals(madameProductsTxt, Data.MADAME_BRAND_PRODUCTS_TEXT);
         sleepTest(1500);
         System.out.println(madameProductsTxt + "\n");
         System.out.println("You are watching " + madameProductsTxt + "\n");

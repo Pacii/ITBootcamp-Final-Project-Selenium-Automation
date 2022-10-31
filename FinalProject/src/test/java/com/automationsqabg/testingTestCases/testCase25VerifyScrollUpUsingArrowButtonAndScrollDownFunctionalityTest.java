@@ -1,20 +1,20 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest extends baseClass{
+public class TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTest extends BaseClass {
 
     @Test
     public void testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage test25Page = new testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage test25Page = new TestCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityPage(wd);
 
 //        3. I had difficulty removing the ad from the bottom of the page, so I resized the window to remove the ads
         wd.manage().window().setSize(new Dimension(1500,800));
@@ -26,7 +26,7 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
 
@@ -48,7 +48,7 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
 //        8. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
         if (aelp.sliderText.isDisplayed()){
             String sliderTxt = aelp.sliderText.getText();
-            Assert.assertEquals(sliderTxt,data.SLIDER_TEXT);
+            Assert.assertEquals(sliderTxt, Data.SLIDER_TEXT);
             System.out.println();
             System.out.println(sliderTxt);
             System.out.println();
@@ -56,7 +56,7 @@ public class testCase25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionalityT
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
     }
 }

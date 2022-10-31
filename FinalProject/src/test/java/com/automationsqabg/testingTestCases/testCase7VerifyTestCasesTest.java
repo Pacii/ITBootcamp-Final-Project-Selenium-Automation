@@ -1,25 +1,25 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.testCase7VerifyTestCasesPage;
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.TestCase7VerifyTestCasesPage;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase7VerifyTestCasesTest extends baseClass{
+public class TestCase7VerifyTestCasesTest extends BaseClass {
 
     @Test
     public void testCase7VerifyTestCasesTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase7VerifyTestCasesPage test7Page = new testCase7VerifyTestCasesPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase7VerifyTestCasesPage test7Page = new TestCase7VerifyTestCasesPage(wd);
 
         aelp.testCases.click();
         sleepTest(1500);
 
         String testCaseUrl = wd.getCurrentUrl();
-        Assert.assertEquals(testCaseUrl,data.TEST_CASES_URL);
+        Assert.assertEquals(testCaseUrl, Data.TEST_CASES_URL);
         sleepTest(1500);
         System.out.println("URL Matched");
 
@@ -31,7 +31,7 @@ public class testCase7VerifyTestCasesTest extends baseClass{
         sleepTest(1000);
 
         String testCaseTxt = test7Page.testCasesText.getText();
-        Assert.assertEquals(testCaseTxt, data.TEST_CASES_TEXT);
+        Assert.assertEquals(testCaseTxt, Data.TEST_CASES_TEXT);
         sleepTest(1500);
         System.out.println(testCaseTxt + " is showing.");
 

@@ -1,18 +1,18 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.testCase10VerifySubscriptionInHomePage;
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.TestCase10VerifySubscriptionInHomePage;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
-public class testCase10VerifySubscriptionInHomeTest extends baseClass{
+public class TestCase10VerifySubscriptionInHomeTest extends BaseClass {
 
     @Test
     public void testCase10VerifySubscriptionInHomeTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase10VerifySubscriptionInHomePage test10Page = new testCase10VerifySubscriptionInHomePage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase10VerifySubscriptionInHomePage test10Page = new TestCase10VerifySubscriptionInHomePage(wd);
 
         JavascriptExecutor js = (JavascriptExecutor) wd;
 
@@ -20,7 +20,7 @@ public class testCase10VerifySubscriptionInHomeTest extends baseClass{
         js.executeScript("arguments[0].scrollIntoView(true);", test10Page.subscription);
         sleepTest(5000);
 
-        test10Page.subscriptionEmailInputBox().sendKeys(data.SUBSCRIPTION_US_EMAIL);
+        test10Page.subscriptionEmailInputBox().sendKeys(Data.SUBSCRIPTION_US_EMAIL);
         sleepTest(1500);
 
         test10Page.arrowButton.click();

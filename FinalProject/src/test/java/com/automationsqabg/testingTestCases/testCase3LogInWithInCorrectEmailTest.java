@@ -1,32 +1,32 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase3LogInWithInCorrectEmailPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase3LogInWithInCorrectEmailPage;
+import com.automationsqabg.Utility.Data;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase3LogInWithInCorrectEmailTest extends baseClass{
+public class TestCase3LogInWithInCorrectEmailTest extends BaseClass {
 
     @Test
     public void testCase3LogInWithInCorrectEmailTesting(){
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase3LogInWithInCorrectEmailPage test3Page = new testCase3LogInWithInCorrectEmailPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase3LogInWithInCorrectEmailPage test3Page = new TestCase3LogInWithInCorrectEmailPage(wd);
 
         aelp.signUpLogInButton.click();
         sleepTest(1000);
 
         String signUpUrl = wd.getCurrentUrl();
-        Assert.assertEquals(signUpUrl, data.LOGIN_SIGNUP_URL);
+        Assert.assertEquals(signUpUrl, Data.LOGIN_SIGNUP_URL);
         System.out.println("URL Matched");
         sleepTest(1500);
 
-        aelp.loginEmailAddress.sendKeys(data.INCORRECT_EMAIL);
+        aelp.loginEmailAddress.sendKeys(Data.INCORRECT_EMAIL);
         sleepTest(1500);
         System.out.println("Incorrect Email Wrote");
 
-        aelp.loginPassword.sendKeys(data.INCORRECT_PASSWORD);
+        aelp.loginPassword.sendKeys(Data.INCORRECT_PASSWORD);
         sleepTest(1500);
         System.out.println("Incorrect Password Wrote");
 
@@ -35,7 +35,7 @@ public class testCase3LogInWithInCorrectEmailTest extends baseClass{
         System.out.println("Login clicked");
 
         String incorrectMessage = test3Page.incorrectMessage.getText();
-        Assert.assertEquals(incorrectMessage,data.INCORRECT_TEXT);
+        Assert.assertEquals(incorrectMessage, Data.INCORRECT_TEXT);
         sleepTest(1500);
         System.out.println("Incorrect Message Showed");
 

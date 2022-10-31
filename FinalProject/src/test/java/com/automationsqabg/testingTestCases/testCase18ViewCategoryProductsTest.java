@@ -1,19 +1,19 @@
 package com.automationsqabg.testingTestCases;
 
-import com.automationsqabg.paths.automationExerciseLandingPage;
-import com.automationsqabg.paths.testCase18ViewCategoryProductsPage;
-import com.automationsqabg.dataPackage.data;
+import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.pages.TestCase18ViewCategoryProductsPage;
+import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testCase18ViewCategoryProductsTest extends baseClass{
+public class TestCase18ViewCategoryProductsTest extends BaseClass {
 
     @Test
     public void testCase18ViewCategoryProductsTesting() {
 
-        automationExerciseLandingPage aelp = new automationExerciseLandingPage(wd);
-        testCase18ViewCategoryProductsPage test18Page = new testCase18ViewCategoryProductsPage(wd);
+        LandingPage aelp = new LandingPage(wd);
+        TestCase18ViewCategoryProductsPage test18Page = new TestCase18ViewCategoryProductsPage(wd);
 
         JavascriptExecutor je = (JavascriptExecutor) wd;
         je.executeScript("window.scrollBy (0,700)");
@@ -21,13 +21,13 @@ public class testCase18ViewCategoryProductsTest extends baseClass{
 //        3. Verify that categories are visible on left side bar
         if (test18Page.categoryText.isDisplayed()) {
             String categoryTxt = test18Page.categoryText.getText();
-            Assert.assertEquals(categoryTxt, data.CATEGORY_TEXT);
+            Assert.assertEquals(categoryTxt, Data.CATEGORY_TEXT);
             System.out.println("\n"+categoryTxt+"\n");
             sleepTest(1500);
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
 //        4. Click on 'Women' category
@@ -42,13 +42,13 @@ public class testCase18ViewCategoryProductsTest extends baseClass{
 
         if (test18Page.womenTopsProductsText.isDisplayed()){
             String womenTopsProductsTxt = test18Page.womenTopsProductsText.getText();
-            Assert.assertEquals(womenTopsProductsTxt, data.WOMEN_TOPS_PRODUCTS_TEXT);
+            Assert.assertEquals(womenTopsProductsTxt, Data.WOMEN_TOPS_PRODUCTS_TEXT);
             System.out.println(womenTopsProductsTxt+"\n");
             sleepTest(1500);
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
 //        7. On left side bar, click on any sub-category link of 'Men' category
@@ -62,13 +62,13 @@ public class testCase18ViewCategoryProductsTest extends baseClass{
 
         if (test18Page.menJeansProductsText.isDisplayed()){
             String menJeansProductsTxt = test18Page.menJeansProductsText.getText();
-            Assert.assertEquals(menJeansProductsTxt, data.MEN_JEANS_PRODUCTS_TEXT);
+            Assert.assertEquals(menJeansProductsTxt, Data.MEN_JEANS_PRODUCTS_TEXT);
             System.out.println(menJeansProductsTxt+"\n");
             sleepTest(1500);
         }
 
         else {
-            System.out.println(data.ERROR_MESSAGE);
+            System.out.println(Data.ERROR_MESSAGE);
         }
 
     }
