@@ -1,7 +1,7 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
-import com.automationsqabg.pages.LandingPage;
-import com.automationsqabg.pages.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityPage;
+import com.automationsqabg.Pages.LandingPage;
+import com.automationsqabg.Pages.TestCase26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionalityPage;
 import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;

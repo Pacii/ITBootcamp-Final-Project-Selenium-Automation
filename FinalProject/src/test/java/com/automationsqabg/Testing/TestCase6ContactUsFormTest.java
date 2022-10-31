@@ -1,8 +1,8 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
-import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.Pages.LandingPage;
 import com.automationsqabg.Utility.Data;
-import com.automationsqabg.pages.TestCase6ContactUsFormPage;
+import com.automationsqabg.Pages.TestCase6ContactUsFormPage;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;

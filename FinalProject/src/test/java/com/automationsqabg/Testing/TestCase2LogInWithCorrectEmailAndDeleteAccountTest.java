@@ -1,8 +1,8 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
 import com.automationsqabg.Utility.Data;
-import com.automationsqabg.pages.LandingPage;
-import com.automationsqabg.pages.TestCase2LogInWithCorrectEmailAndDeleteAccountPage;
+import com.automationsqabg.Pages.LandingPage;
+import com.automationsqabg.Pages.TestCase2LogInWithCorrectEmailAndDeleteAccountPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -1,8 +1,8 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
 
-import com.automationsqabg.pages.TestCase5RegisterUserWithExistingEmailPage;
-import com.automationsqabg.pages.LandingPage;
+import com.automationsqabg.Pages.TestCase5RegisterUserWithExistingEmailPage;
+import com.automationsqabg.Pages.LandingPage;
 import com.automationsqabg.Utility.Data;
 import org.testng.Assert;
 import org.testng.annotations.Test;

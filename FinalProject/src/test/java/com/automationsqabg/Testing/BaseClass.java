@@ -1,4 +1,4 @@
-package Test;
+package com.automationsqabg.Testing;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -42,7 +42,7 @@ public class BaseClass {
 //        WebDriver driver = new ChromeDriver(chromeOptions);
 
         wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
 
@@ -50,8 +50,6 @@ public class BaseClass {
     public void beforeMethod() {
         wd.navigate().to("https://www.automationexercise.com/");
         sleepTest(1000);
-
-
     }
     @AfterMethod
     public void afterTest(){

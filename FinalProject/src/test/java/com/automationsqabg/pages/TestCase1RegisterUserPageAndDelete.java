@@ -1,4 +1,4 @@
-package com.automationsqabg.pages;
+package com.automationsqabg.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

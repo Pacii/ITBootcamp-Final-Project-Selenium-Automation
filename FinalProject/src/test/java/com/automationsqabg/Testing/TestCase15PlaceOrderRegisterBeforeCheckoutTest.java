@@ -1,26 +1,33 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
-import com.automationsqabg.pages.LandingPage;
-import com.automationsqabg.pages.TestCase23VerifyAddressDetailsInCheckoutPagePage;
+import com.automationsqabg.Pages.TestCase15PlaceOrderRegisterBeforeCheckoutPage;
+import com.automationsqabg.Pages.LandingPage;
 import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass {
+public class TestCase15PlaceOrderRegisterBeforeCheckoutTest extends BaseClass {
 
     @Test
-    public void testCase23VerifyAddressDetailsInCheckoutPageTesting() {
+    public void testCase15PlaceOrderRegisterBeforeCheckoutTesting() {
 
         LandingPage aelp = new LandingPage(wd);
-        TestCase23VerifyAddressDetailsInCheckoutPagePage test23Page = new TestCase23VerifyAddressDetailsInCheckoutPagePage(wd);
+        TestCase15PlaceOrderRegisterBeforeCheckoutPage test15Page = new TestCase15PlaceOrderRegisterBeforeCheckoutPage(wd);
 
 //        3. Verify that home page is visible successfully
-        String homePageUrl = wd.getCurrentUrl();
-        Assert.assertEquals(homePageUrl, Data.BASE_URL);
-        sleepTest(1500);
-        System.out.println(homePageUrl);
+        if (aelp.homeSlider.isDisplayed()){
+            String homePageUrl = wd.getCurrentUrl();
+            Assert.assertEquals(homePageUrl, Data.BASE_URL);
+            sleepTest(1500);
+            System.out.println(Data.HOME_PAGE_SUCCESS_MESSAGE);
+            sleepTest(2500);
+        }
+
+        else {
+            System.out.println(Data.ERROR_MESSAGE);
+        }
 
 //        4. Click 'Signup / Login' button
         aelp.signUpLogInButton.click();
@@ -28,12 +35,13 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
 
 //        5. Fill all details in Signup and create account
         aelp.signUpNameInput.sendKeys(Data.SIGNUP_NAME_INPUT);
-        sleepTest(1500);
+        sleepTest(2500);
 
-        aelp.signUpEmailAddressInput.sendKeys(Data.SIGNUP_EMAIL_ADDRESS_INPUT_TC_23);
-        sleepTest(1500);
+        aelp.signUpEmailAddressInput.sendKeys(Data.SIGNUP_EMAIL_ADDRESS_INPUT);
+        sleepTest(2500);
 
         aelp.signUpSubmitButton.click();
+        sleepTest(2500);
 
         aelp.signUpTitleRadioButton.click();
         sleepTest(2500);
@@ -41,9 +49,9 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
         aelp.signUpPasswordInput.sendKeys(Data.SIGNUP_PAGE_PASSWORD_INPUT);
         sleepTest(2500);
 
-        JavascriptExecutor jse = (JavascriptExecutor) wd;
-        jse.executeScript("window.scrollBy(0,500)");
-        sleepTest(2500);
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("window.scrollBy(0,400)");
+        sleepTest(2000);
 
         Select objSelectDay = new Select(aelp.signUpDayDropdown);
         objSelectDay.selectByValue(Data.SIGNUP_PAGE_DATE_DROPDOWN);
@@ -88,9 +96,6 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
         aelp.signUpCityInput.sendKeys(Data.SIGNUP_CITY_INPUT);
         sleepTest(2500);
 
-        jse.executeScript("window.scrollBy(0,500)");
-        sleepTest(500);
-
         aelp.signUpZipCodeInput.sendKeys(Data.SIGNUP_ZIPCODE_INPUT);
         sleepTest(2500);
 
@@ -106,11 +111,12 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
             Assert.assertEquals(signUpAccountCreatedTxt, Data.SIGNUP_ACCOUNT_CREATED_TXT);
             System.out.println(Data.SIGNUP_ACCOUNT_CREATED_TXT);
             sleepTest(2500);
-        }
-        else {
+        } else {
             System.out.println(Data.ERROR_MESSAGE);
         }
+
         aelp.signUpAccountCreatedContinueButton.click();
+        sleepTest(2500);
 
 //        7. Verify ' Logged in as username' at top
         if (aelp.loggedInAsTxt.isDisplayed()) {
@@ -126,8 +132,7 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
         }
 
 //        8. Add products to cart
-        JavascriptExecutor js = (JavascriptExecutor) wd;
-        js.executeScript("window.scrollBy(0,600)");
+        js.executeScript("window.scrollBy(0,700)");
         sleepTest(2500);
 
         aelp.viewProduct.click();
@@ -161,8 +166,6 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
             System.out.println(Data.ERROR_MESSAGE);
         }
 
-//        13. Verify that the billing address is same address filled at the time registration of account
-
         if (aelp.billingAddressFullName.isDisplayed()) {
             String deliveryAddressFullNameTxt = aelp.billingAddressFullName.getText();
             Assert.assertEquals(deliveryAddressFullNameTxt, Data.BILLING_ADDRESS_FULL_NAME);
@@ -170,8 +173,45 @@ public class TestCase23VerifyAddressDetailsInCheckoutPageTest extends BaseClass 
             System.out.println(Data.ERROR_MESSAGE);
         }
 
-//        14. Click 'Delete Account' button
-//        15. Verify 'ACCOUNT DELETED!' and click 'Continue' button
+//        13. Enter description in comment text area and click 'Place Order'
+        aelp.checkOutPageCommentInput.sendKeys(Data.CHECK_OUT_PAGE_COMMENT);
+        sleepTest(2500);
+
+        aelp.placeOrderButton.click();
+        sleepTest(2500);
+
+//        14. Enter payment details: Name on Card, Card Number, CVC, Expiration date
+        aelp.nameOnCardInput.sendKeys(Data.NAME_ON_CARD_INPUT);
+        sleepTest(2500);
+
+        aelp.cardNumberInput.sendKeys(Data.CARD_NUMBER_INPUT);
+        sleepTest(2500);
+
+        aelp.cvcInput.sendKeys(Data.CVC_INPUT);
+        sleepTest(2500);
+
+        aelp.expirationMonth.sendKeys(Data.EXPIRATION_MONTH_INPUT);
+        sleepTest(2500);
+
+        aelp.expirationYear.sendKeys(Data.EXPIRATION_YEAR_INPUT);
+        sleepTest(2500);
+
+//        15. Click 'Pay and Confirm Order' button
+        aelp.payAndConfirmOrderButton.click();
+        sleepTest(2500);
+
+//        16. Verify success message 'Your order has been placed successfully!'
+        if (aelp.orderPlaceSuccessTxt.isDisplayed()) {
+            String orderPlaceSuccessText = aelp.orderPlaceSuccessTxt.getText();
+            Assert.assertEquals(orderPlaceSuccessText, Data.ORDER_PLACE_SUCCESS_TEXT);
+        }
+        else {
+            System.out.println(Data.ERROR_MESSAGE);
+        }
+
+        aelp.orderPlaceSuccessPageContinueButton.click();
+        sleepTest(2500);
 
     }
+
 }

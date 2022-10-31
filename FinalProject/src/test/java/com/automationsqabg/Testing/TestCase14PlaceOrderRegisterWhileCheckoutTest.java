@@ -1,7 +1,7 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
-import com.automationsqabg.pages.LandingPage;
-import com.automationsqabg.pages.TestCase14PlaceOrderRegisterWhileCheckoutPage;
+import com.automationsqabg.Pages.LandingPage;
+import com.automationsqabg.Pages.TestCase14PlaceOrderRegisterWhileCheckoutPage;
 import com.automationsqabg.Utility.Data;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.Select;

@@ -1,8 +1,8 @@
-package com.automationsqabg.testingTestCases;
+package com.automationsqabg.Testing;
 
 import com.automationsqabg.Utility.Data;
-import com.automationsqabg.pages.LandingPage;
-import com.automationsqabg.pages.TestCase1RegisterUserPageAndDelete;
+import com.automationsqabg.Pages.LandingPage;
+import com.automationsqabg.Pages.TestCase1RegisterUserPageAndDelete;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
